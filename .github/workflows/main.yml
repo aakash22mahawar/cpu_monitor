@@ -1,4 +1,4 @@
-name: Python CI
+name: Python CI/CD with github_actions
 
 on:
   push:
@@ -27,6 +27,4 @@ jobs:
 
     - name: Run basic check
       run: |
-        python procexp.py &
-        sleep 30
-        pkill -f procexp.py
+        python procexp.py 
